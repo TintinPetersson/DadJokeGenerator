@@ -1,0 +1,24 @@
+﻿@model DadJokeGenerator.DTO.JokeModel
+
+<h1 class="text-light text-center">@Model.Joke</h1>
+
+<div class="row pt-5 justify-content-center">
+    <div class="col-3">
+        <a class="btn btn-light" asp-controller="Joke" asp-action="AllCaps" asp-route-Joke="@Model.Joke">Make it all caps!</a>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-light" asp-controller="Joke" asp-action="QuestionMark" asp-route-Joke="@Model.Joke">Make it a question!</a>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-light" asp-controller="Joke" asp-action="Reverse" asp-route-Joke="@Model.Joke">Reverse it!</a>
+    </div>
+</div>
+
+
+
+
+@*<div class="row justify-content-md-center">
+    <div class="col-3">
+        <a class="btn btn-success" asp-controller="Joke" asp-action="AllCaps" asp-route-name="@Model.Joke">Make it all caps!</a>
+    </div>
+</div>*@
